@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     fetchTasks();
-  }, [searchTerm, filter, sortBy]);
+  }, [searchTerm, filter, sortBy]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchTasks = async () => {
     try {
